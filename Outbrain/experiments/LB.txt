@@ -1,0 +1,3 @@
+sample10_t24k20l5e7r5e3_output_submission.csv                       0.61917     
+leak_add_to_sample10_t24k20l5e7r5e3_output_submission.csv           0.63612    *
+leakin10mins_add_to_sample10_t24k20l5e7r5e3_output_submission.csv   0.63541

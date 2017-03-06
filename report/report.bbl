@@ -1,0 +1,61 @@
+\begin{thebibliography}{10}
+
+\bibitem{han2011data}
+Jiawei Han, Jian Pei, and Micheline Kamber.
+\newblock {\em Data mining: concepts and techniques}.
+\newblock Elsevier, 2011.
+
+\bibitem{pang2006introduction}
+Tan Pang-Ning, Michael Steinbach, Vipin Kumar, et~al.
+\newblock Introduction to data mining.
+\newblock In {\em Library of congress}, volume~74, 2006.
+
+\bibitem{kaggle:house}
+Kaggle.
+\newblock House prices:house prices: Advanced regression techniques, 2016.
+\newblock [Online; accessed 2016].
+
+\bibitem{kaggle:outbrain}
+Kaggle.
+\newblock Outbrain click prediction, 2016.
+\newblock [Online; accessed 2016].
+
+\bibitem{wiki:CTR}
+Wikipedia.
+\newblock Click-through rate, 2016.
+\newblock [Online; accessed 2016].
+
+\bibitem{tibshirani1996regression}
+Robert Tibshirani.
+\newblock Regression shrinkage and selection via the lasso.
+\newblock {\em Journal of the Royal Statistical Society. Series B
+  (Methodological)}, pages 267--288, 1996.
+
+\bibitem{juan2016field}
+Yuchin Juan, Yong Zhuang, Wei-Sheng Chin, and Chih-Jen Lin.
+\newblock Field-aware factorization machines for ctr prediction.
+\newblock In {\em Proceedings of the 10th ACM Conference on Recommender
+  Systems}, pages 43--50. ACM, 2016.
+
+\bibitem{rendle2010factorization}
+Steffen Rendle.
+\newblock Factorization machines.
+\newblock In {\em 2010 IEEE International Conference on Data Mining}, pages
+  995--1000. IEEE, 2010.
+
+\bibitem{libffm}
+National~Taiwan University.
+\newblock Libffm: A library for field-aware factorization machines, 2016.
+\newblock [Online; accessed 2016].
+
+\bibitem{wiki:regression}
+Wikipedia.
+\newblock Regression analysis, 2016.
+\newblock [Online; accessed 2016].
+
+\bibitem{wiki:scikit}
+Wikipedia.
+\newblock scikit-learn, 2016.
+\newblock [Online; accessed 2016].
+
+\end{thebibliography}

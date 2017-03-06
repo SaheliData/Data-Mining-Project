@@ -1,0 +1,4 @@
+file              timestamp_type   records   score_to_assign
+leak.csv          after            270674     1.0
+leakin10mins.csv  in0~10mins       250297     1.0
+leakWithTraffic1  after,traffic=1  270565     1.0 

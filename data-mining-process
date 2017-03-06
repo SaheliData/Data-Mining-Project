@@ -1,0 +1,19 @@
+
+Understand the problem; Assume some candidate algorithms:
+
+1 Regression forest;
+2 Ridge regression;
+3 NN;
+
+————————————————————————————
+
+0 data cleaning  ( missing values; outliers; normalization;  etc.) 
+
+1 data transformation  (cat -> num?  num->cat?)
+
+2 dimension reduction (optional) (pca: less features)
+
+3 main algorithms: trainning and testing
+
+
+

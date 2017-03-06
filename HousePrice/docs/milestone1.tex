@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%       PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[paper=letter, fontsize=12pt]{article}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+\usepackage{blindtext}
+\usepackage{graphicx} 
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{algpseudocode}
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+%\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\usepackage{titlesec} % Allows customization of titles
+\usepackage{indentfirst}
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+
+\fancyhead[C]{Indiana University $\bullet$ B565 $\bullet$ Mesa} % Custom header text
+
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+%----------------------------------------------------------------------------------------
+%       TITLE SECTION
+%----------------------------------------------------------------------------------------
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Milestone 1 }} % Article title
+\author{
+\large
+{\textsc{Ethan Li, Saheli Saha}}\\[2mm]
+%\thanks{A thank you or further information}\\ % Your name
+\normalsize {Indiana University Bloomington}\\ % Your email address
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+\maketitle % Insert title
+\thispagestyle{fancy} % All pages have headers and footers
+
+Group name: Mesa
+
+\section{House Prices}
+
+The goal of this project is to predict the price of the houses in Ames, Iowa.We are almost done with the prediction and have some preliminary results. At first we did data visualization to have a better understanding about the data. Following that we cleaned the data by imputing missing values and normalized the data. We use sample mean to impute numerical data and sample mode to impute categorical data. In order to be able to do regression, we transformed the categorical data into dummy vectors. As a result we got more than 300 features. Apparently, we felt the necessity to reduce the dimension of the datas to save computing resources and running time. So we applied PCA as a feature selection algorithm to the cleaned data. Finally we applied prediction models, such as linear regression and regression forest. We got fair results and we will continue to work on it to get better accuracy. 
+
+The main challenge of this project is to make better prediction for the house price. We are still working on this to get better result by tuning different parameters and applying different algorithm.
+
+\section{Outbrain Click Prediction}
+
+The goal of this project is to rank the recommendations in each display group by decreasing predicted likelihood of being clicked. We are in the preliminary stage of this project. As the project is bit different than the conventional data mining projects we are using different perspective to deal with the large amount of data. Currently we are forming our ideas to deal with the project and experimenting with the same. The ideas are as follows:
+
+1) Transform the problem to a regression problem. From the datasets, we can form a data table, with ad\_id as the primary id and all information related to the ad\_ids, such as document topics, document categories, and campaign\_id as the features. The number of clicked times related to the ad\_ids is the result we want to predict. Then we can sort ad\_id in display\_id in test data according to the predicted number of clicked times as the final results. 
+
+2) use collaborative filtering (CF) algorithm. Use user id and ad id to form a data matrix indicating the relation between users and ads. The CF algorithm predicts user's preferences by considering the similar interests between some other users. By applying the CF algorithm, we can attain the preferences of all ads to each of these users. It then can be used very naturally to the test data.
+
+The main challenges are to deal with large datasets, and get a good prediction. To deal with large datasets, we can use some existing packages, and if necessary, implement distributed algorithms on clusters. For getting good prediction, we will need to do experiments and tune our algorithms.
+ 
+%----------------------------------------------------------------------------------------
+%\end{multicols}
+\end{document}
